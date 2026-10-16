@@ -18,13 +18,12 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ayushg001/test-devops-backend:1.0
+          image: ayushg001/test-devops-backend:24ecacf2f60b7b1e59d48c50f7935e58fbde27ec
           ports:
             - containerPort: 5000
           envFrom:
             - configMapRef:
                 name: test-configmap
-
 #Field	Explanation
 # apiVersion:apps/v1                 API version used for Deployments.
 # kind:Deployment	                   Tells Kubernetes to manage your backend Pods.
@@ -37,7 +36,6 @@ spec:
 # containers                         Lists the containers inside each Pod.
 # image                              Docker image Kubernetes should download and run.
 # containerPort: 5000                Documents the port your Node.js app listens on inside the container.
-
 
 # If one Pod fails, Kubernetes attempts to replace it. If both are healthy, 
 # a correctly configured Service can distribute traffic between them.
