@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ayushg001/test-devops-frontend:65901d1997c26a2424bbf7ebcfd521bf28a429d5
+          image: ayushg001/test-devops-frontend:1c0f66cf967fc04c2bbe5ed87a30c5c25bdd496c
           ports:
             - containerPort: 5173
 #Field	Explanation
@@ -35,6 +35,5 @@ spec:
 # containerPort: 3000                Documents the port your Node.js app listens on inside the container.
 # If one Pod fails, Kubernetes attempts to replace it. If both are healthy, 
 # a correctly configured Service can distribute traffic between them.
-
 # One important condition: your frontend must support running in multiple instances. 
 # If it stores important state only in process memory, each replica has its own separate state.
