@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ayushg001/test-devops-frontend:24ecacf2f60b7b1e59d48c50f7935e58fbde27ec
+          image: ayushg001/test-devops-frontend:65901d1997c26a2424bbf7ebcfd521bf28a429d5
           ports:
             - containerPort: 5173
 #Field	Explanation
@@ -33,7 +33,6 @@ spec:
 # containers                         Lists the containers inside each Pod.
 # image                              Docker image Kubernetes should download and run.
 # containerPort: 3000                Documents the port your Node.js app listens on inside the container.
-
 # If one Pod fails, Kubernetes attempts to replace it. If both are healthy, 
 # a correctly configured Service can distribute traffic between them.
 
