@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ayushg001/test-devops-backend:f864c1d5f2c4687a0bb7922fe619392ce276b8fe
+          image: ayushg001/test-devops-backend:4a27bb66cbd877ab2ad5df119873d44b36bc3879
           ports:
             - containerPort: 5000
           envFrom:

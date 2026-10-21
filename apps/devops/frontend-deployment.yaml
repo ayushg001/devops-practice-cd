@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ayushg001/test-devops-frontend:f864c1d5f2c4687a0bb7922fe619392ce276b8fe
+          image: ayushg001/test-devops-frontend:4a27bb66cbd877ab2ad5df119873d44b36bc3879
           ports:
             - containerPort: 5173
 #Field	Explanation
